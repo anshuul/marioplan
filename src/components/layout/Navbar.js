@@ -13,14 +13,16 @@ const Navbar = (props) => {
     <SignedOutLinks />
   );
   return (
-    <nav className="nav-wrapper grey darken-3  ">
-      <div className="container left-align">
-        <Link to="/" className="brand-logo" style={{ left: "20%" }}>
-          MarioPlan
-        </Link>
-        {links}
-      </div>
-    </nav>
+    <div className="navbar-fixed">
+      <nav className="nav-wrapper grey darken-3 navbar-fixed">
+        <div className="container left-align">
+          <Link to="/" className="brand-logo" style={{ left: "20%" }}>
+            MarioPlan
+          </Link>
+          {links}
+        </div>
+      </nav>
+    </div>
   );
 };
 

@@ -4,7 +4,7 @@ import moment from "moment";
 const Notifications = (props) => {
   const { notifications } = props;
   return (
-    <div className="section">
+    <div className="section" style={{ position: "fixed", width: "40%" }}>
       <div className="card z-depth-2 customNotificationCard">
         <div className="card-content">
           <span className="card-title">Notifications</span>

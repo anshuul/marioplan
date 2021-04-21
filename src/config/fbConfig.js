@@ -1,15 +1,15 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
-
+import env from "../env";
 var firebaseConfig = {
-  apiKey: "AIzaSyASak1Tm4rt3zaCtxAzUhCnNq4xNm4BmvI",
-  authDomain: "marioplan-main.firebaseapp.com",
-  projectId: "marioplan-main",
-  storageBucket: "marioplan-main.appspot.com",
-  messagingSenderId: "94164734057",
-  appId: "1:94164734057:web:53cd2d6c7fd55f8c86d2f8",
-  measurementId: "G-FTEXX2GNTZ",
+  apiKey: env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: env.REACT_APP_FIREBASE_MESSAGINF_SENDER_ID,
+  appId: env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
